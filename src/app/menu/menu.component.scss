@@ -1,0 +1,16 @@
+.menu {
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+
+.menu-category {
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    flex: 3;
+    flex-wrap: wrap;
+}
