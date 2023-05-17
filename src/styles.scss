@@ -11,3 +11,11 @@ body { margin: 0; font-family: "Open Sans", sans-serif; }
 .clearfix:after, .container:after, .container-fluid:after, .row:after {
     clear: both;
 }
+
+.pull-right {
+    float: right;
+}
+
+.hidden {
+    display: none !important;
+}

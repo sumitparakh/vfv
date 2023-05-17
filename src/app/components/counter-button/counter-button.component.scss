@@ -1,0 +1,21 @@
+.primary {
+    color: #e8202d !important;
+    border-radius: 4px !important;
+}
+
+.btn.counter-btn:disabled {
+    color: #555;
+}
+
+.btn.counter-btn:disabled {
+    padding: 0 10px;
+}
+
+.btn.counter-btn {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn.counter-btn .counter-btn-label, .counter-btn-label {
+    padding: 0 5px;
+}
