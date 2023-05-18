@@ -1,6 +1,12 @@
-<div><button class="btn counter-btn" disabled=""><span class="hidden"><span class="btn-text"> Add
-            </span>
-            <div class="counter hidden"><span class="counter-decrement">-</span>
-                0 <span class="counter-increment">+</span></div>
-        </span><span class="counter-btn-label"> Coming Soon </span></button>
+<div>
+        <button class="btn counter-btn">
+                <span>
+                        <span class="btn-text" (click)="addItem()"> Add</span>
+                        <div class="counter">
+                                <span class="counter-decrement">-</span>0
+                                <span class="counter-increment">+</span>
+                        </div>
+                </span>
+                <span class="hidden counter-btn-label"> Coming Soon </span>
+        </button>
 </div>
