@@ -3,3 +3,9 @@ export type MenuItem = {
     name: string;
     price: number;
 }
+
+export type MenuCategory = {
+    id: string;
+    name: string;
+    description: string;
+}
