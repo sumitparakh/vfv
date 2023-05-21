@@ -1,8 +1,8 @@
-<div class="category-wrapper" id="category-72">
+<div class="category-wrapper" *ngFor="let category of categories" [id]="category.id">
     <div class="clearfix"></div>
     <div class="category-description-container">
-        <div class="category-heading"> All-In-1-Meals </div>
-        <div class="category-description"> Our Contemporary Take on the Authentic Royal Thali. Bon Appetit! </div>
+        <div class="category-heading"> {{category.name}} </div>
+        <div class="category-description"> {{category.description}} </div>
     </div>
     <app-category-product-wrapper />
 </div>
