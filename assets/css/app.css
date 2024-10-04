@@ -1,0 +1,10 @@
+.vfv-logo {
+  width: 128px;
+}
+
+/* write a media query to resize logo based on mobile display */
+@media (max-width: 768px) {
+  .vfv-logo {
+    width: 48px;
+  }
+}
