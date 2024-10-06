@@ -2402,6 +2402,7 @@ hr {
 }
 .about-low-area .about-img img {
   width: 100%;
+  border-radius: 32px;
 }
 .about-low-area .single-caption {
   display: flex;
@@ -2482,6 +2483,7 @@ hr {
 }
 .about-area2 .about-img img {
   width: 100%;
+  border-radius: 32px;
 }
 @media (max-width: 575px) {
   .about-caption {
