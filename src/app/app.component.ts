@@ -1,9 +1,9 @@
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -14,4 +14,11 @@ import { RouterModule } from '@angular/router';
 export class AppComponent {
   title = 'vfv';
   status = true;
+  showToolbar = false;
+
+  constructor(private routerChange: Router) {
+    this.routerChange.events.subscribe((val) => {
+        this.showToolbar = !(this.routerChange.url === '/video');
+    });
+  }
 }

@@ -4,6 +4,13 @@ import { RouterModule } from '@angular/router';
 import { routes } from './app/app-routing.module';
 import { importProvidersFrom } from '@angular/core';
 
+declare global {
+  interface Window {
+    YT: typeof YT | undefined;
+    onYouTubeIframeAPIReady: (() => void) | undefined;
+  }
+}
+
 
 bootstrapApplication(AppComponent, {
   providers: [

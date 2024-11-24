@@ -19,3 +19,9 @@ body { margin: 0; font-family: "Open Sans", sans-serif; }
 .hidden {
     display: none !important;
 }
+
+.video-container {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+}

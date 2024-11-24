@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CategoryProductWrapperComponent } from './category-product-wrapper/category-product-wrapper.component';
-import { MenuCardComponent } from 'src/app/components/menu-card/menu-card.component';
 import { MenuCategory } from 'src/types/menu';
 
 @Component({
     selector: 'app-category-wrapper',
-    imports: [CommonModule, CategoryProductWrapperComponent, MenuCardComponent],
+    imports: [CommonModule, CategoryProductWrapperComponent],
     templateUrl: './category-wrapper.component.html',
     styleUrls: ['./category-wrapper.component.scss']
 })
