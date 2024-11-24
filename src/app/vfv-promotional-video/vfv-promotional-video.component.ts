@@ -1,4 +1,4 @@
-import { Component, signal, ViewChild } from '@angular/core';
+import { Component, OnInit, signal, ViewChild } from '@angular/core';
 import { YouTubePlayer } from '@angular/youtube-player';
 
 @Component({
@@ -12,7 +12,7 @@ import { YouTubePlayer } from '@angular/youtube-player';
   `,
   styleUrl: './vfv-promotional-video.component.scss'
 })
-export class VfvPromotionalVideoComponent {
+export class VfvPromotionalVideoComponent implements OnInit {
 
   @ViewChild('yt') yt?: YouTubePlayer;
 
@@ -26,6 +26,10 @@ export class VfvPromotionalVideoComponent {
   constructor() {
     this.width.set(window.innerWidth);
     this.height.set(window.innerHeight);
+  }
+
+  ngOnInit(): void {
+      this.yt?.playVideo();
   }
 
   onYoutubeVideoStateChange(event: YT.OnStateChangeEvent) {
