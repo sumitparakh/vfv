@@ -6,11 +6,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-root',
-  standalone: true,
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss'],
-  imports: [MatIconModule, MatToolbarModule, MatButtonModule, RouterModule, CommonModule]
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss'],
+    imports: [MatIconModule, MatToolbarModule, MatButtonModule, RouterModule, CommonModule]
 })
 export class AppComponent {
   title = 'vfv';

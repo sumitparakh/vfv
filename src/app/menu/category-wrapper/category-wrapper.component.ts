@@ -5,11 +5,10 @@ import { MenuCardComponent } from 'src/app/components/menu-card/menu-card.compon
 import { MenuCategory } from 'src/types/menu';
 
 @Component({
-  selector: 'app-category-wrapper',
-  standalone: true,
-  imports: [CommonModule, CategoryProductWrapperComponent, MenuCardComponent],
-  templateUrl: './category-wrapper.component.html',
-  styleUrls: ['./category-wrapper.component.scss']
+    selector: 'app-category-wrapper',
+    imports: [CommonModule, CategoryProductWrapperComponent, MenuCardComponent],
+    templateUrl: './category-wrapper.component.html',
+    styleUrls: ['./category-wrapper.component.scss']
 })
 export class CategoryWrapperComponent implements OnInit {
   categories: MenuCategory[] = [];

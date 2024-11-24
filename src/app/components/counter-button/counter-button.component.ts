@@ -4,11 +4,10 @@ import { MenuItem } from 'src/types/menu';
 import { CartService } from '../../services/cart.service';
 
 @Component({
-  selector: 'app-counter-button',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './counter-button.component.html',
-  styleUrls: ['./counter-button.component.scss']
+    selector: 'app-counter-button',
+    imports: [CommonModule],
+    templateUrl: './counter-button.component.html',
+    styleUrls: ['./counter-button.component.scss']
 })
 export class CounterButtonComponent implements OnInit {
 
