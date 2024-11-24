@@ -46,9 +46,14 @@
         },
         events: {
           'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
+          'onStateChange': onPlayerStateChange,
+          'onError': onPlayerError
         }
       });
+    }
+
+    function onPlayerError(event) {
+      alert('Error: '+event.data);
     }
 
     // 4. The API will call this function when the video player is ready.
