@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Packages & PG Plans — VFV Pure Veg, Pune</title>
+  <meta name="description" content="VFV Pure Veg monthly meal plans for PGs, hostels, and offices in Pune. Breakfast ₹80, Lunch ₹130, Dinner ₹130. Bulk discounts available. Call 8013613403.">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/vfv-premium.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/img/vfv-logo.png" alt="VFV Pure Veg Logo">
+    <div class="nav-logo-text">
+      <span>VFV Pure Veg</span>
+      <span>Pure Vegetarian Catering</span>
+    </div>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="packages.html" class="active">Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="tel:8013613403" class="nav-call"><i class="fas fa-phone"></i> 8013613403</a>
+    <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20meal%20packages." target="_blank" class="btn-gold" style="padding:10px 20px;font-size:12px;">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#services">Services</a>
+  <a href="packages.html">Packages & Meal Plans</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-cta">
+    <a href="tel:8013613403" class="btn-gold"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/918013613403" target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <span class="section-tag">PG & Bulk Services</span>
+    <h1>Meal <span class="gold">Packages & Plans</span></h1>
+    <p>Affordable monthly meal plans for PGs, hostels, offices & institutions in Pune.</p>
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right" style="font-size:10px;"></i>
+      <span>Meal Packages</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRO + INDIVIDUAL MEALS -->
+<section class="section-pad">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px;">
+      <span class="section-tag">Individual Meals</span>
+      <h2 class="section-title">Choose Your <span class="gold">Meal Plan</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Select individual meals or go for a combo plan. Customized plans available based on quantity and duration.</p>
+    </div>
+
+    <!-- Individual Meal Cards -->
+    <div class="meal-plans-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr));margin-bottom:48px;">
+      <div class="meal-plan-card" onclick="selectPlan('Breakfast',80,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-sun"></i></div>
+        <h4>Breakfast</h4>
+        <div class="price">₹<span>80</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Poha, Paratha, Idli & more<br>(Rotational weekly menu)</div>
+      </div>
+      <div class="meal-plan-card" onclick="selectPlan('Lunch',130,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-cloud-sun"></i></div>
+        <h4>Lunch</h4>
+        <div class="price">₹<span>130</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Dal, Rice, Chapati,<br>Sabji, Salad & more</div>
+      </div>
+      <div class="meal-plan-card" onclick="selectPlan('Dinner',130,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-moon"></i></div>
+        <h4>Dinner</h4>
+        <div class="price">₹<span>130</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Veg Thali, Dal, Rice,<br>Chapati, Sabji & more</div>
+      </div>
+    </div>
+
+    <!-- Combo Plan Cards -->
+    <div style="text-align:center;margin-bottom:28px;">
+      <span class="section-tag">Combo Plans</span>
+      <h3 style="font-size:26px;margin-top:8px;">Save More with <span class="gold">Combo Packages</span></h3>
+    </div>
+
+    <div class="meal-plans-grid">
+      <div class="meal-plan-card" onclick="selectPlan('Breakfast + Lunch',190,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-sun"></i></div>
+        <h4>Breakfast + Lunch</h4>
+        <div class="price">₹<span>190</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Morning + Afternoon meals</div>
+      </div>
+      <div class="meal-plan-card" onclick="selectPlan('Breakfast + Dinner',190,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-adjust"></i></div>
+        <h4>Breakfast + Dinner</h4>
+        <div class="price">₹<span>190</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Morning + Evening meals</div>
+      </div>
+      <div class="meal-plan-card" onclick="selectPlan('Lunch + Dinner',250,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-cloud-moon"></i></div>
+        <h4>Lunch + Dinner</h4>
+        <div class="price">₹<span>250</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Afternoon + Evening meals</div>
+      </div>
+      <div class="meal-plan-card popular" onclick="selectPlan('Breakfast + Lunch + Dinner',300,this)">
+        <div class="service-icon" style="margin:0 auto 12px;"><i class="fas fa-utensils"></i></div>
+        <h4>All 3 Meals</h4>
+        <div class="price">₹<span>300</span></div>
+        <div class="per">Per person / day</div>
+        <div class="includes">Breakfast + Lunch + Dinner<br>Best value plan</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="section-pad" style="background:var(--dark-card);border-top:1px solid var(--dark-border);border-bottom:1px solid var(--dark-border);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;">
+      <span class="section-tag">Smart Calculator</span>
+      <h2 class="section-title">Get Instant <span class="gold">Quotation</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Select your meal plan, enter the number of people, and get your quote instantly.</p>
+    </div>
+
+    <div class="calculator-box">
+      <h3 class="calc-title">Quotation Calculator</h3>
+      <p class="calc-sub">Minimum order: 10 meals/day. Bulk discounts unlock at 20+ and 30+ quantity.</p>
+
+      <div class="calc-section-label">Step 1 — Select Meal Plan</div>
+      <div class="calc-meal-select">
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Breakfast',80,this)">Breakfast<br><small>₹80/day</small></button>
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Lunch',130,this)">Lunch<br><small>₹130/day</small></button>
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Dinner',130,this)">Dinner<br><small>₹130/day</small></button>
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Breakfast + Lunch',190,this)">B + Lunch<br><small>₹190/day</small></button>
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Breakfast + Dinner',190,this)">B + Dinner<br><small>₹190/day</small></button>
+        <button class="calc-meal-btn" onclick="calcSelectPlan('Lunch + Dinner',250,this)">L + Dinner<br><small>₹250/day</small></button>
+        <button class="calc-meal-btn selected" onclick="calcSelectPlan('Breakfast + Lunch + Dinner',300,this)">All 3 Meals<br><small>₹300/day</small></button>
+      </div>
+
+      <div class="calc-section-label">Step 2 — Enter Quantity</div>
+      <div class="calc-qty-wrap">
+        <label for="qtyInput">Number of people:</label>
+        <input type="number" id="qtyInput" class="calc-qty-input" value="20" min="1" oninput="calculateQuote()">
+        <div>
+          <div class="qty-note">Min. 10 meals/day</div>
+          <div class="qty-error" id="qtyError" style="display:none;">Minimum order: 10 meals/day</div>
+        </div>
+      </div>
+
+      <div class="quotation-result show" id="quotationResult">
+        <div class="quote-title"><i class="fas fa-file-invoice-dollar" style="margin-right:8px;"></i>Your Quotation</div>
+        <div class="quote-row"><span class="label">Selected Package</span><span class="value" id="q-plan">Breakfast + Lunch + Dinner</span></div>
+        <div class="quote-row"><span class="label">Price Per Person / Day</span><span class="value" id="q-price">₹300</span></div>
+        <div class="quote-row"><span class="label">Quantity</span><span class="value" id="q-qty">20 people</span></div>
+        <div class="quote-row"><span class="label">Subtotal Per Day</span><span class="value" id="q-subtotal">₹6,000</span></div>
+        <div class="quote-row"><span class="label">Bulk Discount</span><span class="value gold" id="q-discount">5% (20–29 qty)</span></div>
+        <div class="quote-row"><span class="label">Discount Amount / Day</span><span class="value" id="q-discount-amt">₹300</span></div>
+        <div class="quote-row highlight"><span class="label">Final Payable / Day</span><span class="value" id="q-daily">₹5,700</span></div>
+        <div class="quote-row total"><span class="label">Est. Monthly Cost (30 days)</span><span class="value" id="q-monthly">₹1,71,000</span></div>
+        <div class="quote-savings show" id="q-savings-box">
+          🎉 Monthly Savings with Bulk Discount: <span id="q-savings">₹9,000</span>
+        </div>
+      </div>
+
+      <div style="margin-top:28px;text-align:center;">
+        <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px;">Need a customized package? We tailor menus and pricing to your requirements and budget.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+          <a href="tel:8013613403" class="btn-gold"><i class="fas fa-phone"></i> Call Now — 8013613403</a>
+          <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20a%20quote%20for%20meal%20packages." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp for Final Quote</a>
+          <a href="contact.html" class="btn-outline"><i class="fas fa-map-marker-alt"></i> Request Site Visit</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Discount Structure -->
+    <div style="max-width:700px;margin:0 auto;">
+      <h3 style="text-align:center;margin-bottom:24px;font-size:22px;">Bulk <span class="gold">Discount Structure</span></h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px;text-align:center;">
+        <div style="background:var(--dark-card2);border:1px solid var(--dark-border);border-radius:8px;padding:24px 16px;">
+          <div style="font-size:32px;font-family:'Playfair Display',serif;color:var(--text-muted);margin-bottom:8px;">10–19</div>
+          <div style="font-size:24px;font-weight:900;color:var(--text-primary);margin-bottom:4px;">0%</div>
+          <div style="font-size:12px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Standard Rate</div>
+        </div>
+        <div style="background:var(--dark-card2);border:1px solid var(--gold-dark);border-radius:8px;padding:24px 16px;">
+          <div style="font-size:32px;font-family:'Playfair Display',serif;color:var(--gold);margin-bottom:8px;">20–29</div>
+          <div style="font-size:24px;font-weight:900;color:var(--gold);margin-bottom:4px;">5%</div>
+          <div style="font-size:12px;color:var(--text-muted);letter-spacing:1px;text-transform:uppercase;">Bulk Discount</div>
+        </div>
+        <div style="background:linear-gradient(135deg,rgba(201,168,76,0.12),rgba(201,168,76,0.04));border:1px solid var(--gold);border-radius:8px;padding:24px 16px;">
+          <div style="font-size:32px;font-family:'Playfair Display',serif;color:var(--gold-light);margin-bottom:8px;">30+</div>
+          <div style="font-size:24px;font-weight:900;color:var(--gold-light);margin-bottom:4px;">10%</div>
+          <div style="font-size:12px;color:var(--gold);letter-spacing:1px;text-transform:uppercase;">Max Discount</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENU DETAILS -->
+<section class="section-pad">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:40px;">
+      <span class="section-tag">What's Included</span>
+      <h2 class="section-title">Menu <span class="gold">Details</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">Rotational menus designed for variety, freshness, and nutrition. Menus may vary to ensure the best experience.</p>
+    </div>
+
+    <div class="menu-accordion">
+      <!-- Breakfast -->
+      <div class="accordion-item open">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h4><i class="fas fa-sun" style="color:var(--gold);margin-right:12px;"></i>Breakfast Menu — Weekly Rotation</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body">
+          <table class="weekly-table">
+            <thead>
+              <tr><th>Day</th><th>Breakfast</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Monday</td><td>Poha</td></tr>
+              <tr><td>Tuesday</td><td>Sabji Puri</td></tr>
+              <tr><td>Wednesday</td><td>Paratha with Sabji</td></tr>
+              <tr><td>Thursday</td><td>Upma</td></tr>
+              <tr><td>Friday</td><td>Idli Sambhar</td></tr>
+              <tr><td>Saturday</td><td>Sandwich</td></tr>
+              <tr><td>Sunday</td><td>Stuffed Paratha with Curd (Aloo / Paneer / Sattu / Palak)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Lunch -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h4><i class="fas fa-cloud-sun" style="color:var(--gold);margin-right:12px;"></i>Lunch Menu — Rotational</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body">
+          <div class="menu-list">
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Traditional Veg Thali</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Dal</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Seasonal Vegetable Curry</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Jeera Rice</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Chapati</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Salad</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Pickle</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Papad</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Aloo Paratha</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Dal Bati</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Litti Chokha</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Pav Bhaji with Tawa Pulao</div>
+          </div>
+          <p style="margin-top:16px;font-size:13px;color:var(--text-muted);font-style:italic;">* Menus are rotational and may vary to maintain freshness, nutrition, and variety.</p>
+        </div>
+      </div>
+
+      <!-- Dinner -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          <h4><i class="fas fa-moon" style="color:var(--gold);margin-right:12px;"></i>Dinner Menu — Rotational</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="accordion-body">
+          <div class="menu-list">
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Veg Thali</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Dal</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Rice</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Chapati</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Seasonal Sabji</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Salad</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Pickle</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Pav Bhaji</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Tawa Pulao</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Dal Bati</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Litti Chokha</div>
+            <div class="menu-list-item"><i class="fas fa-circle"></i>Aloo Paratha</div>
+          </div>
+          <p style="margin-top:16px;font-size:13px;color:var(--text-muted);font-style:italic;">* Menus are rotational and may vary to maintain freshness, nutrition, and variety.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-banner">
+  <div class="container">
+    <span class="section-tag">Get Started</span>
+    <h2 class="section-title">Ready to Place a <span class="gold">Bulk Order?</span></h2>
+    <p>Call us or WhatsApp to discuss your requirements. We'll create the best plan for you.</p>
+    <div class="cta-btns">
+      <a href="tel:8013613403" class="btn-gold"><i class="fas fa-phone"></i> Call Now — 8013613403</a>
+      <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20meal%20packages." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp for Final Quote</a>
+      <a href="contact.html" class="btn-outline"><i class="fas fa-map-marker-alt"></i> Request Site Visit</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/vfv-logo.png" alt="VFV Pure Veg">
+        <div class="brand-name">VFV Pure Veg</div>
+        <div class="brand-tag">Pure Vegetarian Catering & Meal Solutions</div>
+        <p>Fresh, hygienic, authentic vegetarian food for every occasion across Pune.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Meal Plans</h5>
+        <ul>
+          <li><a href="packages.html">Breakfast — ₹80</a></li>
+          <li><a href="packages.html">Lunch — ₹130</a></li>
+          <li><a href="packages.html">Dinner — ₹130</a></li>
+          <li><a href="packages.html">All 3 Meals — ₹300</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:8013613403"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>8013613403</a></li>
+          <li><a href="https://wa.me/918013613403" target="_blank"><i class="fab fa-whatsapp" style="color:var(--gold);margin-right:8px;"></i>WhatsApp Us</a></li>
+          <li style="color:var(--text-muted);font-size:13px;margin-top:8px;line-height:1.7;">Viman Nagar, Pune — 411014</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 <span>VFV Pure Veg</span>. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="tel:8013613403" class="float-call" style="position:relative;" title="Call Now"><i class="fas fa-phone"></i><span class="float-label">Call Now</span></a>
+  <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20meal%20packages." target="_blank" class="float-wa" style="position:relative;" title="WhatsApp"><i class="fab fa-whatsapp"></i><span class="float-label">WhatsApp Us</span></a>
+</div>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Calculator state
+  let calcPlan = 'Breakfast + Lunch + Dinner';
+  let calcPrice = 300;
+
+  function calcSelectPlan(plan, price, btn) {
+    calcPlan = plan;
+    calcPrice = price;
+    document.querySelectorAll('.calc-meal-btn').forEach(b => b.classList.remove('selected'));
+    btn.classList.add('selected');
+    calculateQuote();
+  }
+
+  function calculateQuote() {
+    const qty = parseInt(document.getElementById('qtyInput').value) || 0;
+    const err = document.getElementById('qtyError');
+    const result = document.getElementById('quotationResult');
+
+    if (qty < 10) {
+      err.style.display = 'block';
+      result.classList.remove('show');
+      return;
+    }
+    err.style.display = 'none';
+
+    let discountRate = 0;
+    let discountLabel = 'No Discount';
+    if (qty >= 30) { discountRate = 0.10; discountLabel = '10% (30+ qty)'; }
+    else if (qty >= 20) { discountRate = 0.05; discountLabel = '5% (20–29 qty)'; }
+
+    const subtotal = calcPrice * qty;
+    const discountAmt = Math.round(subtotal * discountRate);
+    const daily = subtotal - discountAmt;
+    const monthly = daily * 30;
+    const monthlySavings = discountAmt * 30;
+
+    document.getElementById('q-plan').textContent = calcPlan;
+    document.getElementById('q-price').textContent = '₹' + calcPrice;
+    document.getElementById('q-qty').textContent = qty + ' people';
+    document.getElementById('q-subtotal').textContent = '₹' + subtotal.toLocaleString('en-IN');
+    document.getElementById('q-discount').textContent = discountLabel;
+    document.getElementById('q-discount-amt').textContent = discountAmt > 0 ? '₹' + discountAmt.toLocaleString('en-IN') : '—';
+    document.getElementById('q-daily').textContent = '₹' + daily.toLocaleString('en-IN');
+    document.getElementById('q-monthly').textContent = '₹' + monthly.toLocaleString('en-IN') + '/month';
+
+    const savingsBox = document.getElementById('q-savings-box');
+    if (monthlySavings > 0) {
+      document.getElementById('q-savings').textContent = '₹' + monthlySavings.toLocaleString('en-IN');
+      savingsBox.classList.add('show');
+    } else {
+      savingsBox.classList.remove('show');
+    }
+
+    result.classList.add('show');
+  }
+
+  // Accordion
+  function toggleAccordion(header) {
+    const item = header.parentElement;
+    item.classList.toggle('open');
+  }
+
+  // Plan card click
+  function selectPlan(plan, price, card) {
+    document.querySelectorAll('.meal-plan-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    // Sync to calculator
+    calcPlan = plan;
+    calcPrice = price;
+    document.querySelectorAll('.calc-meal-btn').forEach(b => b.classList.remove('selected'));
+    document.querySelectorAll('.calc-meal-btn').forEach(b => {
+      if (b.textContent.trim().startsWith(plan.split(' ')[0]) && b.querySelector('small')?.textContent.includes(price)) {
+        b.classList.add('selected');
+      }
+    });
+    calculateQuote();
+    document.querySelector('.calculator-box').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  calculateQuote();
+</script>
+</body>
+</html>

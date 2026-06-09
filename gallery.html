@@ -1,224 +1,240 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> VFV | Catering Gallery </title>
-    <meta name="description" content="Photos from VFV catering services">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/slicknav.css">
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <link rel="stylesheet" href="assets/css/gijgo.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/themify-icons.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <style>
-        .catering-gallery { padding: 80px 0 60px; }
-        .catering-gallery .gallery-item {
-            position: relative;
-            margin-bottom: 30px;
-            overflow: hidden;
-            border-radius: 6px;
-            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
-        }
-        .catering-gallery .gallery-item img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s ease;
-        }
-        .catering-gallery .gallery-item:hover img { transform: scale(1.06); }
-        .catering-gallery .gallery-item::after {
-            content: "\f00e";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            font-size: 28px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            pointer-events: none;
-        }
-        .catering-gallery .gallery-item:hover::after { opacity: 1; }
-        .catering-gallery .gallery-item::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0,0,0,0.35);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .catering-gallery .gallery-item:hover::before { opacity: 1; }
-        .gallery-hero { padding: 120px 0 60px; text-align: center; }
-        .gallery-hero h2 { font-size: 42px; margin-bottom: 10px; }
-        .gallery-hero p { max-width: 680px; margin: 0 auto; color: #6b6b6b; }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — VFV Pure Veg, Pune</title>
+  <meta name="description" content="Browse VFV Pure Veg catering event photos, buffet setups, food counters, and service team in action across Pune.">
+  <link rel="shortcut icon" href="assets/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/vfv-premium.css">
 </head>
-
 <body>
-    <!--? Preloader Start -->
-    <div id="preloader-active">
-        <div class="preloader d-flex align-items-center justify-content-center">
-            <div class="preloader-inner position-relative">
-                <div class="preloader-circle"></div>
-                <div class="preloader-img pere-text">
-                    <img src="assets/img/vfv-logo.png" alt="">
-                </div>
-            </div>
-        </div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="assets/img/vfv-logo.png" alt="VFV Pure Veg Logo">
+    <div class="nav-logo-text">
+      <span>VFV Pure Veg</span>
+      <span>Pure Vegetarian Catering</span>
     </div>
-    <!-- Preloader Start -->
-    <header>
-        <div class="header-area header-transparent">
-            <div class="main-header  header-sticky">
-                <div class="container-fluid">
-                    <div class="row align-items-center">
-                        <div class="col-xl-2 col-lg-2 col-md-1">
-                            <div class="logo">
-                                <a href="index.html"><img class="vfv-logo" src="assets/img/vfv-logo.png" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10 col-md-10">
-                            <div class="menu-main d-flex align-items-center justify-content-end">
-                                <div class="main-menu f-right d-none d-lg-block">
-                                    <nav>
-                                        <ul id="navigation">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="index.html#branches">Branches</a></li>
-                                            <li><a href="index.html#varities">Varities</a></li>
-                                            <li><a href="index.html#services">Services</a></li>
-                                            <li><a href="gallery.html">Gallery</a></li>
-                                            <li><a href="index.html#about">About</a></li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <div class="header-right-btn f-right d-none d-lg-block ml-20">
-                                    <a href="https://www.zomato.com/pune/vfv-viman-nagar" target="_blank"
-                                        class="online-order-btn"><img src="./assets/img/zomato.webp" /></a>
-                                    <a href="https://www.swiggy.com/city/pune/veggie-food-village-mutha-river-viman-nagar-rest667027"
-                                        target="_blank" class="online-order-btn"><img
-                                            src="./assets/img/swiggy.png" /></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="gallery-hero">
-            <div class="container">
-                <span style="color:#e6b800; letter-spacing:2px; text-transform:uppercase; font-weight:600;">Our Catering Services</span>
-                <h2>Moments From Our Catering</h2>
-                <p>A glimpse of the events we have proudly catered — authentic pure-veg spreads, served with care for weddings, corporate gatherings, and family celebrations.</p>
-            </div>
-        </section>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="packages.html">Packages</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-cta">
+    <a href="tel:8013613403" class="nav-call"><i class="fas fa-phone"></i> 8013613403</a>
+    <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20catering%20services." target="_blank" class="btn-gold" style="padding:10px 20px;font-size:12px;">
+      <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+  </div>
+  <div class="nav-hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="index.html#about">About</a>
+  <a href="index.html#services">Services</a>
+  <a href="packages.html">Packages & Meal Plans</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="contact.html">Contact</a>
+  <div class="mobile-cta">
+    <a href="tel:8013613403" class="btn-gold"><i class="fas fa-phone"></i> Call Now</a>
+    <a href="https://wa.me/918013613403" target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</div>
 
-        <section class="catering-gallery">
-            <div class="container">
-                <div class="row popup-gallery">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering1.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering1.jpeg" alt="VFV catering setup">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering2.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering2.jpeg" alt="VFV catering spread">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering3.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering3.jpeg" alt="VFV catering dishes">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering4.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering4.jpeg" alt="VFV catering event">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering5.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering5.jpeg" alt="VFV catering buffet">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering6.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering6.jpeg" alt="VFV catering food">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering7.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering7.jpeg" alt="VFV catering service">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <a href="assets/img/gallery/catering/catering8.jpeg" class="gallery-item" title="VFV Catering">
-                            <img src="assets/img/gallery/catering/catering8.jpeg" alt="VFV catering plating">
-                        </a>
-                    </div>
-                </div>
-                <div class="row justify-content-center mt-40">
-                    <a href="contact.html" class="btn hero-btn">Book Our Catering</a>
-                </div>
-            </div>
-        </section>
-    </main>
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <span class="section-tag">Our Work</span>
+    <h1>Events & <span class="gold">Catering Gallery</span></h1>
+    <p>Real events, real food, real smiles — a peek into the VFV Pure Veg experience.</p>
+    <div class="breadcrumb-nav">
+      <a href="index.html">Home</a>
+      <i class="fas fa-chevron-right" style="font-size:10px;"></i>
+      <span>Gallery</span>
+    </div>
+  </div>
+</div>
 
-    <div id="back-top">
-        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+<!-- GALLERY -->
+<section class="section-pad">
+  <div class="container">
+    <div class="gallery-filter">
+      <button class="filter-btn active" onclick="filterGallery('all', this)">All Photos</button>
+      <button class="filter-btn" onclick="filterGallery('catering', this)">Catering Events</button>
+      <button class="filter-btn" onclick="filterGallery('buffet', this)">Buffet Arrangements</button>
+      <button class="filter-btn" onclick="filterGallery('food', this)">Food Counters</button>
+      <button class="filter-btn" onclick="filterGallery('event', this)">Event Ambience</button>
     </div>
 
-    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/popper.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/jquery.slicknav.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/slick.min.js"></script>
-    <script src="./assets/js/wow.min.js"></script>
-    <script src="./assets/js/animated.headline.js"></script>
-    <script src="./assets/js/jquery.magnific-popup.js"></script>
-    <script src="./assets/js/gijgo.min.js"></script>
-    <script src="./assets/js/jquery.nice-select.min.js"></script>
-    <script src="./assets/js/jquery.sticky.js"></script>
-    <script src="./assets/js/contact.js"></script>
-    <script src="./assets/js/jquery.form.js"></script>
-    <script src="./assets/js/jquery.validate.min.js"></script>
-    <script src="./assets/js/mail-script.js"></script>
-    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
-    <script src="./assets/js/plugins.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.popup-gallery').magnificPopup({
-                delegate: 'a.gallery-item',
-                type: 'image',
-                gallery: { enabled: true, navigateByImgClick: true, preload: [0, 2] },
-                image: { titleSrc: 'title' }
-            });
-        });
-    </script>
+    <div class="gallery-masonry" id="galleryGrid">
+      <div class="gallery-masonry-item" data-cat="catering" onclick="openLightbox(0)">
+        <img src="assets/img/gallery/catering/catering1.jpeg" alt="Catering Event 1" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Catering Event</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="buffet" onclick="openLightbox(1)">
+        <img src="assets/img/gallery/catering/catering2.jpeg" alt="Buffet Setup" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Buffet Setup</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="catering" onclick="openLightbox(2)">
+        <img src="assets/img/gallery/catering/catering3.jpeg" alt="Catering Event 3" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Catering Event</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="food" onclick="openLightbox(3)">
+        <img src="assets/img/gallery/catering/catering4.jpeg" alt="Food Counter" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Food Counter</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="event" onclick="openLightbox(4)">
+        <img src="assets/img/gallery/catering/catering5.jpeg" alt="Event Ambience" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Event Ambience</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="buffet" onclick="openLightbox(5)">
+        <img src="assets/img/gallery/catering/catering6.jpeg" alt="Buffet Arrangement" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Buffet Arrangement</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="catering" onclick="openLightbox(6)">
+        <img src="assets/img/gallery/catering/catering7.jpeg" alt="Live Catering Setup" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Live Setup</span></div>
+      </div>
+      <div class="gallery-masonry-item" data-cat="food" onclick="openLightbox(7)">
+        <img src="assets/img/gallery/catering/catering8.jpeg" alt="Food Counter 2" loading="lazy">
+        <div class="overlay"><i class="fas fa-search-plus"></i><span>Food Counter</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:48px;padding:32px;background:var(--dark-card);border:1px solid var(--dark-border);border-radius:8px;">
+      <h3 style="margin-bottom:8px;">Interested in Our Catering?</h3>
+      <p style="color:var(--text-muted);margin-bottom:24px;">Contact us to discuss your event requirements and get a free quote.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:8013613403" class="btn-gold"><i class="fas fa-phone"></i> Call — 8013613403</a>
+        <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20catering%20services." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+        <a href="contact.html" class="btn-outline"><i class="fas fa-envelope"></i> Send Enquiry</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" onclick="changeLightbox(-1)"><i class="fas fa-chevron-left"></i></button>
+  <img src="" alt="Gallery Image" class="lightbox-img" id="lightboxImg">
+  <button class="lightbox-next" onclick="changeLightbox(1)"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/vfv-logo.png" alt="VFV Pure Veg">
+        <div class="brand-name">VFV Pure Veg</div>
+        <div class="brand-tag">Pure Vegetarian Catering & Meal Solutions</div>
+        <p>Fresh, hygienic, authentic vegetarian food for every occasion across Pune.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul>
+          <li><a href="index.html#services">Wedding Catering</a></li>
+          <li><a href="index.html#services">Corporate Catering</a></li>
+          <li><a href="index.html#services">Buffet Catering</a></li>
+          <li><a href="packages.html">Bulk Meal Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:8013613403"><i class="fas fa-phone" style="color:var(--gold);margin-right:8px;"></i>8013613403</a></li>
+          <li><a href="https://wa.me/918013613403" target="_blank"><i class="fab fa-whatsapp" style="color:var(--gold);margin-right:8px;"></i>WhatsApp Us</a></li>
+          <li style="color:var(--text-muted);font-size:13px;margin-top:8px;line-height:1.7;">Viman Nagar, Pune — 411014</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 <span>VFV Pure Veg</span>. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="float-btns">
+  <a href="tel:8013613403" class="float-call" style="position:relative;" title="Call Now"><i class="fas fa-phone"></i><span class="float-label">Call Now</span></a>
+  <a href="https://wa.me/918013613403?text=Hi%2C%20I%20want%20to%20enquire%20about%20catering%20services." target="_blank" class="float-wa" style="position:relative;" title="WhatsApp"><i class="fab fa-whatsapp"></i><span class="float-label">WhatsApp Us</span></a>
+</div>
+
+<script>
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+  });
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  function filterGallery(cat, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.gallery-masonry-item').forEach(item => {
+      item.style.display = (cat === 'all' || item.dataset.cat === cat) ? 'block' : 'none';
+    });
+  }
+
+  const images = [
+    'assets/img/gallery/catering/catering1.jpeg',
+    'assets/img/gallery/catering/catering2.jpeg',
+    'assets/img/gallery/catering/catering3.jpeg',
+    'assets/img/gallery/catering/catering4.jpeg',
+    'assets/img/gallery/catering/catering5.jpeg',
+    'assets/img/gallery/catering/catering6.jpeg',
+    'assets/img/gallery/catering/catering7.jpeg',
+    'assets/img/gallery/catering/catering8.jpeg',
+    'assets/img/litti_chokha.jpeg',
+    'assets/img/c524c723-e802-412a-a873-d5b0b0dab0fc.jpeg',
+    'assets/img/IMG-20241006-WA0012.jpg',
+  ];
+  let currentImg = 0;
+
+  function openLightbox(index) {
+    currentImg = index;
+    document.getElementById('lightboxImg').src = images[index];
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function changeLightbox(dir) {
+    currentImg = (currentImg + dir + images.length) % images.length;
+    document.getElementById('lightboxImg').src = images[currentImg];
+  }
+  document.getElementById('lightbox').addEventListener('click', function(e) {
+    if (e.target === this) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') changeLightbox(-1);
+    if (e.key === 'ArrowRight') changeLightbox(1);
+  });
+</script>
 </body>
-
 </html>
